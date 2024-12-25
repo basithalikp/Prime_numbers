@@ -1,8 +1,8 @@
 def prime(j):
-    c,isPrime=0,True
+    c=0
     for i in range(1,j+1):
         if j%i==0:
             c+=1
     if c<=2:
-        isPrime=False
-    return isPrime
+        return False
+    return True

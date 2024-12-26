@@ -21,8 +21,28 @@ inates multiples of 2 and 3 first itself, which covers almost all the numbers. A
 already checked factorization with 2 and 3. This one is a little bit complex for rookies, but this is the fastest code for primality. It has significant increase in number of lines,
 but it outperforms ampere by a factor of 1.5 to 2 in 6 digit test [see more on benchmark session]
 
+
 **-----BENCHMARKING-----**
 
-  Inorder to Benchmark these different codes, I've created the prime_list.py file. This is a code prints all prime numbers upto a given number, so this could be helpful in benchmarking.
+  Inorder to Benchmark these different codes, I've created the [prime_list.py] file. This is a code prints all prime numbers upto a given number, so this could be helpful in benchmarking.
 The default is the 5 digit test, which prints prime numbers upto 12345. You may need to change it to 6 or 7 digits if you want to test the fastest codes, and the classical code takes 
 large time even with the 5 digit test. It's also noticeable that speed gap between different codes increases exponentially as the number of digits increases.
+**How to benchmark**
+1. Choose which code you need to benchmark:
+     Change the import statement [Line 2] to the code of your preference. It's given as prime_ampere2 as default.
+2. Change the upper limit:
+     Change the value upto which number you want to print the list of prime numbers. It's 12345 (5 digit test is what I call it) as default.
+3. Note the time taken by the program to execute.
+
+**-----NEW BENCHMARKING TOOL-----**
+    I've added a new [prime_list_time.py] to avoid confusions in benchmarking. This code prints maximum prime numbers in a given time, unlike [prime_list] which prints upto an upper limit 
+  and calculates time taken. This could be easy for comparsions.
+
+  **----SIGNIFICANCE OF OPTIMIZATION----**
+    One may argue that I made up this whole shit just to satisfy my ego with my classmates who believes their classical method is better, but this is more like a self learning for me. I've
+  never thought optimization would make this drastic difference, my ampere code actually is 50 times faster than the classical method, and the alastas code overpowers the ampere code by a 
+  magnitude of 2. It's significant; Imagine you're in a coding competition or job interview or a real life situation and some guy makes a code that's 50 times faster than you...
+
+    I'm also adding a presentation with the benchmark results
+
+  [Benchmark.pptx](https://github.com/user-attachments/files/18253624/Benchmark.pptx)
